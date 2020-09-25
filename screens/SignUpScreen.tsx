@@ -180,7 +180,7 @@ class SignUpScreen extends React.Component<Props, State> {
           <Text style={styles.signUpButton}>Sign Up</Text>
         </TouchableOpacity>
 
-        <View style={{flex: 0.5, flexDirection: 'row'}}>
+        <View style={{flex: 0.5, flexDirection: 'row', marginBottom:30}}>
           <Text style={styles.AlrHaveAnAcctText}>Already have an account?</Text>
           <TouchableOpacity
           onPress={() => this.props.navigation.navigate('Sign In')}>
@@ -200,12 +200,13 @@ const styles = StyleSheet.create({
   {
     flex: 1,
     backgroundColor: '#FFFFFF',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'flex-end',
   },
 
   SignUpText:
   {
-    marginTop: "20%",
+    marginTop: RFValue(33),
     fontSize:RFValue(33),
     fontWeight:'800',
     width: RFValue(230),

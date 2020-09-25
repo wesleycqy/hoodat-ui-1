@@ -10,10 +10,10 @@ class HoodatBudsList extends React.Component {
 
     <View style={styles.container}>
         <View style={{flex: 0, flexDirection: 'row', marginTop:RFValue(70), width: "80%", justifyContent: 'space-between'} }>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate("My Lists")} style={styles.backButton}>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate("My Lists")} >
                 <Icon name="chevron-thin-left" size={25} color="#828282" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.optionsButton}>
+            <TouchableOpacity>
                 <Icon name="dots-three-vertical" size={25} color="#636363" />
             </TouchableOpacity>
         </View>
@@ -92,7 +92,7 @@ class HoodatBudsList extends React.Component {
             </ScrollView>
             <View style={{flex: 1, flexDirection: 'row'}}>
               <TouchableOpacity style={[styles.QuizMeButton, {flex:0, flexDirection:'row'}]}>
-                  <Icon marginTop="20" name="flash" size={30} color="#FFFFFF" style={styles.QuizMeFlashIcon}/>
+                  <Icon name="flash" size={30} color="#FFFFFF" style={styles.QuizMeFlashIcon}/>
                   <Text style={styles.QuizMeText}>Quiz Me</Text>
               </TouchableOpacity>
             </View>
